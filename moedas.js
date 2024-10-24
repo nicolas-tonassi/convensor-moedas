@@ -25,3 +25,10 @@ if (fromCurrency === toCurrency) {
 // Exibe o resultado
 document.getElementById('result').textContent = `Resultado: ${convertedAmount.toFixed(2)}`;
 });
+// Função para resetar os campos
+document.getElementById('reset-button').addEventListener('click', function() {
+   document.getElementById('amount').value = '';
+   document.getElementById('from-currency').selectedIndex = 0;
+   document.getElementById('to-currency').selectedIndex = 0;
+   document.getElementById('result').textContent = '';
+});
